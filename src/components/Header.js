@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+
 import { Fade } from "react-awesome-reveal";
+import PrimarySearchAppBar from "./iindNavbar";
 import "./Header.css";
 
 function NavBar() {
@@ -106,24 +108,10 @@ function NavBar() {
         </div>
       </nav>
       <div>
-        <br />
-        <br />
-        <br />
-        {/* <br /> */}
         {/* 2ndNavbar */}
-        <div class="topnav">
-          {/* <a class="active" href="#home">Home</a> */}
-          <i class="fa fa-bars"></i>
-          search by categary
-          <div class="search-container">
+        <div class="iindNavbar">
+          <PrimarySearchAppBar />
 
-            <input type="text" placeholder="Search.." name="search" />
-            <button type="submit"><i class="fa fa-search"></i></button>
-
-            <i class="fa fa-search"></i>
-            <i class="far fa-heart"></i>
-            <i class="fa fa-shopping-cart"></i>
-          </div>
         </div>
 
 
