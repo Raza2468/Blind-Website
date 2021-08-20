@@ -1,19 +1,19 @@
   
 import "./App.css";
-import Header from "./components/Header";
+// import Header from "./components/Header";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Home } from "./components/Pages/Home";
-import { About } from "./components/Pages/About";
-import { DiyZone } from "./components/Pages/DiyZone";
-import { Dressing } from "./components/Pages/Dressing";
-import { Contact } from "./components/Pages/ContactUs";
-import { Product } from "./components/Pages/Product";
+import { Home } from "./components/Home/Home";
+import { About } from "./components/About/About";
+import { DiyZone } from "./components/Diyzon/DiyZone";
+import { Dressing } from "./components/Dressin/Dressing";
+import { Contact } from "./components/Contact/ContactUs";
+import { Product } from "./components/Product/Product";
 
 function App() {
   return (
     <>
       <Router>
-        <Header />
+        {/* <Header /> */}
 
         <div className="pages">
           <Switch>
@@ -25,6 +25,7 @@ function App() {
             <Route path="/contact" component={Contact} />
           </Switch>
         </div>
+
       </Router>
     </>
   );

@@ -14,6 +14,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
+import './Navbar1.css'
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -32,7 +33,6 @@ const useStyles = makeStyles((theme) => ({
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
     backgroundColor: alpha(theme.palette.common.white, 0.15),
-    // align:'center',
     '&:hover': {
       backgroundColor: alpha(theme.palette.common.white, 0.25),
     },
@@ -134,7 +134,7 @@ export default function PrimarySearchAppBar() {
     >
       <MenuItem>
         <IconButton aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="secondary">
+          <Badge badgeContent={4} color="">
             <MailIcon />
           </Badge>
         </IconButton>
@@ -163,44 +163,42 @@ export default function PrimarySearchAppBar() {
   );
 
   return (
-    <div className={classes.grow}>
-      <AppBar position="static">
+    <div className={classes.grow} >
+      <AppBar position="static" id="ii2dnavbar">
         <Toolbar>
-          <IconButton
+          {/* <IconButton
             edge="start"
             className={classes.menuButton}
             color="inherit"
             aria-label="open drawer"
           >
             <MenuIcon />
-          </IconButton>
-          <Typography className={classes.title} variant="h6" noWrap>
-            Search Categary
-          </Typography>
-          <div className={classes.search}>
-            <div className={classes.searchIcon}>
-              <SearchIcon />
-            </div>
-            <InputBase
-              placeholder="Search…"
-              classes={{
-                root: classes.inputRoot,
-                input: classes.inputInput,
-              }}
-              inputProps={{ 'aria-label': 'search' }}
-            />
+          </IconButton> */}
+          {/* <Typography className={classes.title} variant="h6" noWrap> */}
+         
+          Search By Categary
+          {/* </Typography> */}
+
+          <div class="input-group rounded">
+            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+              aria-describedby="search-addon" id="searchbarNavbar2" />
+            <span class="input-group-text border-0" id="search-addon">
+              <i class="fas fa-search"></i>
+            </span>
           </div>
+
+
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <IconButton aria-label="show 4 new mails" color="inherit">
-              <Badge badgeContent={4} color="secondary">
+              {/* <Badge badgeContent={4} color="secondary"> */}
                 <MailIcon />
-              </Badge>
+              {/* </Badge> */}
             </IconButton>
             <IconButton aria-label="show 17 new notifications" color="inherit">
-              <Badge badgeContent={17} color="secondary">
+              {/* <Badge badgeContent={17} color="secondary"> */}
                 <NotificationsIcon />
-              </Badge>
+              {/* </Badge> */}
             </IconButton>
             <IconButton
               edge="end"

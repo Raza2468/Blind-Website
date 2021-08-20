@@ -1,8 +1,18 @@
 import React from "react";
+import NavBar from "./Navbar1";
+import PrimarySearchAppBar from "./Navbar2nd";
+import Slide from "./Slide";
+import Box from "./box";
+
 
 export const Home = () => {
   return (
     <div>
+      <NavBar/>
+      <PrimarySearchAppBar />
+      <Slide />
+      <Box />
+     
       <h1>Home</h1>
       <p>
       Lorem Ipsum is simply dummy text of the printing and <br />
