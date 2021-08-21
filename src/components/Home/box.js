@@ -1,18 +1,26 @@
 import React from 'react'
 import './Navbar1.css'
-import Fade from 'react-reveal';
-import { Button } from 'react-bootstrap';
+import { Fade, Zoom } from 'react-reveal';
+import { Button, Col, Image } from 'react-bootstrap';
 
 
 
 export default function Box() {
-    const img = {
 
+    function bigImg(x) {
+        x.style.height = "64px";
+        x.style.width = "64px";
+    }
+
+    function normalImg(x) {
+        x.style.height = "32px";
+        x.style.width = "32px";
     }
 
     return (
         <div >
-            <div class="center">
+            {/* Consulting Services */}
+            <div class="consultingcenter">
                 <p><b>Consulting Services</b></p>
             </div>
             {/* 3 Box */}
@@ -73,32 +81,82 @@ export default function Box() {
                 </div>
             </div>
 
+            {/*COUSTOMIZED SOLUTION  */}
             <br />
             <br />
             <div class="flex-container">
                 <div class="flex-item-left">
-                    {/* <div id="colleft" class="col-6 col-md-5"> */}
-                <Fade left>
-                    <div className="text-center">
-                        <br />
-                        <br />
-                        <h1 >COUSTOMIZED SOLUTION</h1>
-                        <br />
-                        <p>We understant every customer with their own test and requirment</p>
-                        <p>We are here help you understood what works best for you hom <br/> & find design solution as per your need</p>
-                        <Button variant="primary" size="lg" active>
-                            SHOP NOW
-                        </Button>
-                    </div>
-                </Fade>
+                    <Fade left>
+                        <div className="text-center">
+                            <br />
+                            <br />
+                            <h1 >COUSTOMIZED SOLUTION</h1>
+                            <br />
+                            <p>We understant every customer with their own test and requirment</p>
+                            <p>We are here help you understood what works best for you hom <br /> & find design solution as per your need</p>
+                            <Button variant="primary" size="lg" active>
+                                SHOP NOW
+                            </Button>
+                        </div>
+                    </Fade>
                 </div>
-                {/* </div> */}
-
                 <div class="flex-item-right">
-                <img src="https://i.dell.com/sites/imagecontent/products/PublishingImages/inspiron-15-3000-laptops/laptop-inspiron-15-3000-series-pdp-pol_hero_bk_gy_intel_US_LATAM.jpg"
-                 class="img-fluid" alt="Responsive image"/>
+                    <img src="https://i.dell.com/sites/imagecontent/products/PublishingImages/inspiron-15-3000-laptops/laptop-inspiron-15-3000-series-pdp-pol_hero_bk_gy_intel_US_LATAM.jpg"
+                        class="img-fluid" alt="Responsive image" />
                 </div>
             </div>
+
+            {/* PAPULAR COLLECTION */}
+
+            <div class="center" >
+                <p class="p-3 border"><b>PAPULAR COLLECTION</b></p>
+            </div>
+
+            <div class="row d-flex justify-content-around">
+                {/* First Card */}
+
+                <div class="column" >
+                    <div class="container card">
+                        <img src="https://images.all-free-download.com/images/graphicthumb/ford_mustang_car_215784.jpg" />
+                        <div class="overla">
+                            <div class="text" id="text">My name is Faiz</div>
+                        </div>
+                        <div class="overlay">
+                            <div class="text">My name is Faiz e Raza</div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* 2nd Card */}
+                <div class="column" >
+                    <div class="container card">
+                        <img src="https://images.all-free-download.com/images/graphicthumb/ford_mustang_car_215784.jpg" />
+                        <div class="overla">
+                            <div class="text" id="text">My name is Faiz</div>
+                        </div>
+                        <div class="overlay">
+                            <div class="text">My name is Faiz e Raza</div>
+                        </div>
+                    </div>
+                </div>
+                {/* 3rd Colum */}
+                <div class="column" >
+                    <div class="container card">
+                        <img src="https://images.all-free-download.com/images/graphicthumb/ford_mustang_car_215784.jpg" />
+                        <div class="overla">
+                            <div class="text" id="text">My name is Faiz</div>
+                        </div>
+                        <div class="overlay">
+                            <div class="text">My name is Faiz e Raza</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
 
         </div>
     )
