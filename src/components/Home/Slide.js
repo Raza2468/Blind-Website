@@ -68,7 +68,7 @@ export default function Slide() {
 
                     <div class="carousel-item">
                         <img
-                            src="https://media.wired.com/photos/6081f4280c9b5877078878e2/16:9/w_2399,h_1349,c_limit/business_plaintext_apple_1313768378.jpg"
+                            src="https://www.executiveblinds.co.za/wp-content/uploads/2019/07/3-1024x683.jpg"
                             class="d-block w-100"
                             alt="..." height="600px"
                         />

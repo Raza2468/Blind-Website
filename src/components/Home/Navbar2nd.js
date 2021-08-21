@@ -134,17 +134,17 @@ export default function PrimarySearchAppBar() {
     >
       <MenuItem>
         <IconButton aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="">
+          {/* <Badge badgeContent={4} color="">
             <MailIcon />
-          </Badge>
+          </Badge> */}
         </IconButton>
         <p>Messages</p>
       </MenuItem>
       <MenuItem>
         <IconButton aria-label="show 11 new notifications" color="inherit">
-          <Badge badgeContent={11} color="secondary">
+          {/* <Badge badgeContent={11} color="secondary">
             <NotificationsIcon />
-          </Badge>
+          </Badge> */}
         </IconButton>
         <p>Notifications</p>
       </MenuItem>
@@ -175,13 +175,21 @@ export default function PrimarySearchAppBar() {
             <MenuIcon />
           </IconButton> */}
           {/* <Typography className={classes.title} variant="h6" noWrap> */}
-         
-          Search By Categary
+          <div>
+            <div id="lineIcon"></div>
+            <div id="lineIcon"></div>
+            <div id="lineIcon3rd"></div>
+          </div>
+
+          <div id="SearchCategary">
+            Search by categary
+          </div>
+
           {/* </Typography> */}
 
-          <div class="input-group rounded">
+          <div class="input-group rounded"  id="searchbarNavbar2">
             <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-              aria-describedby="search-addon" id="searchbarNavbar2" />
+              aria-describedby="search-addon" />
             <span class="input-group-text border-0" id="search-addon">
               <i class="fas fa-search"></i>
             </span>
@@ -192,13 +200,11 @@ export default function PrimarySearchAppBar() {
           <div className={classes.sectionDesktop}>
             <IconButton aria-label="show 4 new mails" color="inherit">
               {/* <Badge badgeContent={4} color="secondary"> */}
-                <MailIcon />
+              <i class="fas fa-search"></i>
               {/* </Badge> */}
             </IconButton>
             <IconButton aria-label="show 17 new notifications" color="inherit">
-              {/* <Badge badgeContent={17} color="secondary"> */}
-                <NotificationsIcon />
-              {/* </Badge> */}
+            <i class="fas fa-heart"></i>
             </IconButton>
             <IconButton
               edge="end"
@@ -208,7 +214,9 @@ export default function PrimarySearchAppBar() {
               onClick={handleProfileMenuOpen}
               color="inherit"
             >
-              <AccountCircle />
+              {/* <i class="fas fa-search"></i> */}
+              <i class="fas fa-shopping-cart"></i>
+              {/* <AccountCircle /> */}
             </IconButton>
           </div>
           <div className={classes.sectionMobile}>

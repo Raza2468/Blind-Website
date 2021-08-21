@@ -137,13 +137,26 @@ margin: 3px;
   margin-top: 4%;
 }
 
+
 #searchbarNavbar2{
   /* width: 60%!important; */
-  /* margin-top: 10px; */
+  margin-top: 10px;
 border: 2px solid rebeccapurple; 
 }
+
 #SearchCategary{
-  align-items: center;
+  width: 200px; 
+
+}
+#lineIcon{
+  margin: 3px;
+  width: 16px;
+  border-bottom: 3px solid red;
+}
+#lineIcon3rd{
+  margin: 3px;
+  width: 10px;
+  border-bottom: 3px solid red;
 }
 
 
@@ -206,8 +219,8 @@ border: 2px solid rebeccapurple;
        background-color: brown!important;
        margin-top: 60px;
      }
-     
-
+     /*boxomg  */
+ 
 
 }
 
@@ -233,15 +246,17 @@ border: 2px solid rebeccapurple;
   /* Box */
   .center {
     text-align: center;
-    border: 3px solid green;
-    padding: 10px 10;
+    margin-top: 10px;
+    font-size: 25px;
+    margin-bottom: 35px;
+  /* border: 3px solid green; */
   }
-  #centerBox{
- /* text-align: center;
-    border: 3px solid green;
-    padding: 70px 0; */
-  
+ 
+  #flip{
+    border: 1px solid  black;
+  box-shadow:  0 0 3px #FF0000, 0 0 5px #0000FF;
   }
+
   .flip-box {
     background-color: transparent;
     width: 300px;
@@ -281,3 +296,56 @@ border: 2px solid rebeccapurple;
     color: white;
     transform: rotateY(180deg);
   }
+  /* 2nd 2 card */
+  #con{
+    border: 1px solid gray;
+  /* margin-top: 100px; */
+  }
+  #colleft{
+    border: 1px solid gray;
+  }
+  #colright{
+    border: 1px solid gray;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .flex-item-left {
+    border: 2px solid grey;
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 45%;
+    /* margin: 10px; */
+    height: 300px;
+  }
+  
+  .flex-item-right {
+    background-color: dodgerblue;
+    /* padding: 10px; */
+    flex: 55%;
+    height: 300px;
+  
+  }
+  .img-fluid{
+    margin-top: 7px;
+    height: 288px;
+  width: 650px;
+  margin-bottom: 5px;
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+  /* #colright{
+    padding: 0px;
+    margin: 0px;
+width: 67%;
+background-color: green;
+} */
