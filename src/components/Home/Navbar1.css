@@ -195,6 +195,7 @@
     padding: 1.5rem;
     width: 100%;
     display: table;
+    /* background-color: saddlebrown; */
   }
   .nav-icon {
     display: block;
@@ -202,11 +203,12 @@
     top: 0;
     right: 0;
     transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     cursor: pointer;
     color: #ffdd40;
     margin-top: -15px;
   }
+  /* resMobile */
   #navIcon {
     display: flex;
     justify-content: center;
@@ -214,9 +216,11 @@
     height: 50px;
     border: 3px solid green;
     color: black;
+    margin-top: -15px;
   }
+  /* resMobile */
   #ii2dnavbar {
-    background-color: brown !important;
+    /* background-color: brown !important; */
     margin-top: 60px;
   }
   /*boxomg  */
@@ -232,17 +236,21 @@
 }
 
 .largestRang {
-  color: palevioletred;
+  color: rgb(197, 104, 159);
 }
 
 .blind {
-  color: blue;
+  color: rgb(17, 124, 180);
 }
 
 .ofBlind {
   text-align: left;
   justify-content: left;
   /* background-color: blue; */
+}
+
+#slidButton {
+  background-color: rgb(14, 162, 232);
 }
 
 /* Box consulting service */
@@ -265,7 +273,7 @@
 
 .flip-box {
   background-color: transparent;
-  width: 300px;
+  /* width: 300px; */
   height: 200px;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
@@ -345,16 +353,15 @@
     border: 2px solid grey;
     background-color: #f1f1f1;
     flex: 45%;
-    width: 303px;
+    width: 255px;
     background-color: rgba(0, 0, 0, 0.2);
     /* margin-left: 15px; */
     margin-left: 35px
   }
-  
   .flex-item-right {
     background-color: dodgerblue;
     margin-left: 35px;
-    width: 303px;
+    width: 255px;
   }
 }
 
@@ -363,7 +370,7 @@
 .center {
   text-align: center;
   /* border: 3px solid grey; */
-  background-color: grey;
+  background-color: rgb(229, 229, 229);
   color: black;
   margin-top: 65px;
   font-size: 20px;
@@ -372,11 +379,11 @@
 /* Float four columns side by side */
 
 .column {
-  margin-top: 45px;
-  border: 1px solid black;
+  margin-top: 40px;
+  /* border: 1px solid black; */
   float: left;
   width: 25%;
-  padding: 0 10px;
+  /* padding: 0 10px; */
 }
 
 /* Remove extra left and right margins, due to padding */
@@ -410,6 +417,7 @@
   padding: 16px;
   text-align: center;
   background-color: #f1f1f1;
+  /* border: 3px solid red; */
 }
 
 .text {
@@ -448,18 +456,18 @@
   /* color */
 }
 
-/*  What CLIENT ARE SAYING....  */
+
+/*  What CLIENT ARE SAYING.... start */
 
 .WhatClients {
   text-align: center;
   /* border: 3px solid grey; */
-  background-color: grey;
+  background-color: rgb(229, 229, 229);
   color: black;
   margin-top: 65px;
   font-size: 20px;
   margin-bottom: 80px;
 }
-
 
 #cardimg {
   /* margin-top: 50px; */
@@ -490,4 +498,37 @@
   width: 75%;
   margin-left: 90px;
 }
+
+/*  What CLIENT ARE SAYING.... start */
+
 /* Footer */
+
+#footer {
+  background-color: rgb(41, 173, 235);
+  color: white;
+}
+
+#foooterli {
+  /* background-color: red; */
+  color: black;
+}
+
+#foooterliHome {
+  color: black;
+  text-align: left;
+  /* border: 1px solid black; */
+}
+
+#footerpolicy {
+  color: black;
+  text-align: left;
+  /* border: 1px solid black; */
+}
+
+#footerfollow {
+  color: black;
+  text-align: left;
+  /* border: 1px solid black; */
+}
+
+/* Footer end*/

@@ -16,12 +16,14 @@ function NavBar() {
       document.getElementById("header").style.background = "white";
     }
   }
+
+
   return (
     <div >
       <nav className="navbar" id="header">
         <div className="nav-container" >
-          <NavLink exact to="/" className="nav-logo">
-            LOGO
+          <NavLink exact to="/" className="nav-logo text-dark">
+           <b>LOGO</b> 
             {/* <i className="fas fa-code"></i> */}
           </NavLink>
 
@@ -94,10 +96,10 @@ function NavBar() {
             </li>
 
             <span id="navIcon">
-              <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="far fa-user"> </i> Sign In Or Register
+              <i className="fab fa-facebook-f"></i>
+              <i className="fab fa-twitter"></i>
+              <i className="fab fa-instagram"></i>
+              <i className="far fa-user"> </i> Sign In Or Register
             </span>
           </ul>
           <div className="nav-icon" onClick={handleClick}>

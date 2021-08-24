@@ -13,7 +13,7 @@ export const Home = () => {
       <Slide />
       <Box />
      
-      <h1>Home</h1>
+      {/* <h1>Home</h1>
       <p>
       Lorem Ipsum is simply dummy text of the printing and <br />
       typesetting industry. Lorem Ipsum has been the industry's <br />
@@ -25,7 +25,7 @@ export const Home = () => {
        and more recently with desktop publishing software like Aldus PageMaker <br />
        including versions of Lorem Ipsum<br />
       
-      </p>
+      </p> */}
           </div>
   );
 };

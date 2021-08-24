@@ -14,15 +14,15 @@ export default function Slide() {
             {/* <!-- Carousel wrapper --> */}
             <div
                 id="carouselDarkVariant"
-                class="carousel slide carousel-fade carousel-dark"
+                className="carousel slide carousel-fade carousel-dark"
                 data-mdb-ride="carousel"
             >
                 {/* <!-- Indicators --> */}
-                <div class="carousel-indicators">
+                <div className="carousel-indicators">
                     <button
                         data-mdb-target="#carouselDarkVariant"
                         data-mdb-slide-to="0"
-                        class="active"
+                        className="active"
                         aria-current="true"
                         aria-label="Slide 1"
                     ></button>
@@ -39,24 +39,24 @@ export default function Slide() {
                 </div>
 
                 {/* <!-- Inner --> */}
-                <div class="carousel-inner">
+                <div className="carousel-inner">
                     {/* <!-- Single item --> */}
-                    <div class="carousel-item active">
+                    <div className="carousel-item active">
 
                         <img
                             src="https://customadeblinds.ca/app-assets/images/slider/slider1.png"
-                            class="d-block w-100"
+                            className="d-block w-100"
                             alt="..."
                             height="600px"
                         />
 
-                        <div class="top-left">
+                        <div className="top-left">
                             <Fade left>
-                                <h1>THE <span class="largestRang">LARGEST RANGE</span><br />
-                                    <span class="ofBlind"> OF <span class="blind"> BLIND </span></span>
+                                <h1>THE <span className="largestRang">LARGEST RANGE</span><br />
+                                    <span className="ofBlind"> OF <span className="blind"> BLIND </span></span>
                                 </h1>
 
-                                <Button variant="primary" size="lg" active>
+                                <Button id="slidButton" size="lg" active>
                                     SHOP NOW
                                 </Button>
                             </Fade>
@@ -66,18 +66,18 @@ export default function Slide() {
 
                     {/* <!-- Single item --> */}
 
-                    <div class="carousel-item">
+                    <div className="carousel-item">
                         <img
                             src="https://www.executiveblinds.co.za/wp-content/uploads/2019/07/3-1024x683.jpg"
-                            class="d-block w-100"
+                            className="d-block w-100"
                             alt="..." height="600px"
                         />
-                        <div class="top-left">
+                        <div className="top-left">
                             <Fade left>
-                                <h1>THE <span class="largestRang">LARGEST RANGE</span><br />
-                                    <span class="ofBlind"> OF <span class="blind"> BLIND </span></span>
+                                <h1>THE <span className="largestRang">LARGEST RANGE</span><br />
+                                    <span className="ofBlind"> OF <span className="blind"> BLIND </span></span>
                                 </h1>
-                                <Button variant="primary" size="lg" active>
+                                <Button id="slidButton" size="lg" active>
                                     SHOP NOW
                                 </Button>
                             </Fade>
@@ -85,18 +85,18 @@ export default function Slide() {
                     </div>
 
                     {/* <!-- Single item --> */}
-                    <div class="carousel-item">
+                    <div className="carousel-item">
                         <img
                             src="https://content.fortune.com/wp-content/uploads/2020/05/F500-2020-004-Apple.jpg"
-                            class="d-block w-100"
+                            className="d-block w-100"
                             alt="..." height="600px"
                         />
-                        <div class="top-left">
+                        <div className="top-left">
                             <Fade left>
-                                <h1>THE <span class="largestRang">LARGEST RANGE</span><br />
-                                    <span class="ofBlind"> OF <span class="blind"> BLIND </span></span>
+                                <h1>THE <span className="largestRang">LARGEST RANGE</span><br />
+                                    <span className="ofBlind"> OF <span className="blind"> BLIND </span></span>
                                 </h1>
-                                <Button variant="primary" size="lg" active>
+                                <Button id="slidButton" size="lg" active>
                                     SHOP NOW
                                 </Button>
                             </Fade>
@@ -105,13 +105,13 @@ export default function Slide() {
                 </div>
 
                 <button
-                    class="carousel-control-prev"
+                    className="carousel-control-prev"
                     type="button"
                     data-mdb-target="#carouselDarkVariant"
                     data-mdb-slide="prev"
                 >
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Previous</span>
                 </button>
                 {/* <button
                     class="carousel-control-next"

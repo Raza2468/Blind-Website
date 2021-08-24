@@ -187,11 +187,11 @@ export default function PrimarySearchAppBar() {
 
           {/* </Typography> */}
 
-          <div class="input-group rounded"  id="searchbarNavbar2">
-            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+          <div className="input-group rounded"  id="searchbarNavbar2">
+            <input type="search" className="form-control rounded" placeholder="Search" aria-label="Search"
               aria-describedby="search-addon" />
-            <span class="input-group-text border-0" id="search-addon">
-              <i class="fas fa-search"></i>
+            <span className="input-group-text border-0" id="search-addon">
+              <i className="fas fa-search"></i>
             </span>
           </div>
 
@@ -200,11 +200,11 @@ export default function PrimarySearchAppBar() {
           <div className={classes.sectionDesktop}>
             <IconButton aria-label="show 4 new mails" color="inherit">
               {/* <Badge badgeContent={4} color="secondary"> */}
-              <i class="fas fa-search"></i>
+              <i className="fas fa-search"></i>
               {/* </Badge> */}
             </IconButton>
             <IconButton aria-label="show 17 new notifications" color="inherit">
-            <i class="fas fa-heart"></i>
+            <i className="fas fa-heart"></i>
             </IconButton>
             <IconButton
               edge="end"
@@ -215,7 +215,7 @@ export default function PrimarySearchAppBar() {
               color="inherit"
             >
               {/* <i class="fas fa-search"></i> */}
-              <i class="fas fa-shopping-cart"></i>
+              <i className="fas fa-shopping-cart"></i>
               {/* <AccountCircle /> */}
             </IconButton>
           </div>
